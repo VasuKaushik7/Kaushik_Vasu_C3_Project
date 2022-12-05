@@ -74,4 +74,15 @@ public class Restaurant {
         return name;
     }
 
+    public Integer finalOrderValue(String... items){
+        int calculatedPrice=0;
+        for(int i = 0; i < items.length; i++){
+            // walk through array of arguments
+           Item foundItem= findItemByName(items[i]);
+           calculatedPrice+=foundItem.getPrice();
+        }
+        return calculatedPrice;
+
+    }
+
 }
