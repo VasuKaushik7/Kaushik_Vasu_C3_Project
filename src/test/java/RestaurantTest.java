@@ -46,6 +46,10 @@ class RestaurantTest {
 
     }
 
+    @Test
+    public void final_order_value_should_return_the_order_value_given_name_of_item(){
+        assertEquals(388,restaurant.finalOrderValue("Sweet corn soup","Vegetable lasagne"));
+    }
     //<<<<<<<<<<<<<<<<<<<<<<<<<OPEN/CLOSED>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
